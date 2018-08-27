@@ -1,0 +1,519 @@
+/*login  start*/
+
+#container2 {
+position: relative;
+}
+.containerAniton{
+	 animation:myshow 0.5s linear 0s 1 normal;
+	-webkit-animation:myshow 0.5s linear 0s 1 normal; /*Safari and Chrome*/
+}
+@keyframes myshow {
+   from {opacity:0.5;}
+   to {opacity: 1;}
+}
+
+@-webkit-keyframes myshow {
+  from {opacity: 0.5;}
+  to {opacity: 1;}
+}
+/*用户头像css*/
+.z_login_header {
+	width: 100%;
+	padding-top:7%;
+	padding-bottom:5%;
+}
+.z_userphoto_section {
+	width: 30%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	text-align: center;
+	margin: 0 auto;
+}
+/* 登录账号输入input部分 css*/
+/*用户名手机号 css*/
+.z_login_username {
+	border-top: 1px solid #D7D7D7;
+	background: #F7F7F7;
+	position: relative;
+	border-bottom: 1px solid #D7D7D7;
+}
+.z_login_username input {
+	height: 45px;
+	padding-left:1%;
+	color: #222222;
+	font-size:1em;
+	background: #F7F7F7;
+	margin-left: 10%;
+	width: 80%;
+}
+.z_userleft_img {
+	width: 8%;
+	position: absolute;
+	left: 3%;
+	top: 25%;
+	display: inline-block;
+}
+.z_userleft_img img {
+	height: 23px;
+}
+
+.z_user_Arrowimg {
+	width: 8%;
+	position: absolute;
+	right: 0%;
+	top: 28%;
+	display: inline-block;
+}
+.z_user_Arrowimg img {
+	width:22px;
+}
+
+/*点击input时 提示曾输入的用户名list  css*/
+.z_Loggedin {
+	height: 120px;
+	background: #F7F7F7;
+	width: 100%;
+	text-align: center;
+}
+.z_Loggedin li{
+	width: 20%;
+	position: relative;
+	display: inline-block;
+	margin-left: 2%;
+	margin-top: 6%;
+
+}
+.z_Loggedin li img {
+	max-height: 60px;
+-webkit-border-radius: 50%;
+-moz-border-radius: 50%;;
+border-radius: 50%;;
+}
+/*pwd css*/
+.z_login_pwd {
+	background: #F7F7F7;
+	position: relative;
+	border-bottom: 1px solid #D7D7D7;	
+}
+
+.z_login_pwd input {
+	height: 45px;
+	padding-left:1%;
+	color: #222222;
+	font-size:1em;
+	background: #F7F7F7;
+	margin-left: 10%;
+	width: 80%;
+}
+/*登录按钮css*/
+.z_login_subbtn {
+	width: 94%;
+	margin: 0 auto;
+	height: 50px;
+	font-size: 20px;
+	border-radius: 5px;
+	color:#FFF;
+	cursor: pointer;
+	margin-top:3%;
+	background: #FC6D1E;
+}
+
+.z_login_subbtn a,.z_login_subbtnNOClick a{
+	color: #FFF;
+	width: 100%;
+	text-align: center;
+	border-radius: 5px;
+	line-height: 50px;
+	display: inline-block;
+	height: 50px;
+	text-align: center;
+
+}
+.z_login_subbtnNOClick{
+	width: 94%;
+	margin: 0 auto;
+	height: 50px;
+	font-size: 20px;
+	border-radius: 5px;
+	color: rgba(255,255,255,0.4);
+	cursor: pointer;
+	margin-top:3%;
+	background: rgba(252,101,18,0.3);
+   
+}
+.z_login_bottom {
+	width: 84%;
+	margin: 0 auto;
+	margin-top: 2%;
+	
+}
+.z_login_toRegist {
+	float: left;
+    margin-top: 3%;
+    font-size: 14px;
+    display:block;
+    width: 2.4rem;
+    height: 0.7rem;
+}
+.z_login_toRegist a{
+	color: #3473DA;
+}
+.z_loginForgetpwd {
+	float: right;
+	margin-top: 3%;
+	font-size: 14px;
+}
+.z_loginForgetpwd a{
+	color: #222222;
+}
+.z_login_foot {
+	width:100%;
+	color: #bbbbbb;
+	text-align: center;
+	line-height: 1.8;
+	overflow:hidden;
+	position: absolute;
+	bottom: 5%;
+
+}
+
+/*login  end*/
+/*register start*/
+
+/*顶部注意事项css*/
+.z_reg_note{
+	width: 100%;
+	padding: 2% 0 2% 0;
+	text-align: center;
+
+}
+.z_reg_note h1 { 
+   color: #bbbbbb; 
+   font-size: 1.1em; 
+   font-weight: 100;
+}
+
+/*密码css*/
+.z_reg_pwd {
+	background: #fff;
+	position: relative;
+	border-bottom: 1px solid #EAEAEB;
+	border-top: 1px solid #EAEAEB;
+
+}
+.z_confirm_pwd {
+	background: #fff;
+	position: relative;
+	margin-bottom: 3%;
+	border-bottom: 1px solid #EAEAEB;	
+}
+
+
+/*电子协议css*/
+.z_reg_checkbox {
+   margin-bottom:10px;
+   position: relative;
+   text-align: left;
+   padding-left:32%;
+   margin-top: 3%;
+}
+.z_reg_checkbox img {
+	max-height: 15px;
+	position: absolute;
+	left: 25%;
+	top: 0px;
+}
+
+/*register  end*/
+/* 弹出层 */
+/*弹出层start*/
+.divpopID{
+	padding-top:0;
+}
+.buyLend_popUp{
+	width:5.8rem;
+	position: fixed;
+	left:50%;
+	margin-left:-3rem;
+	top:20%;
+	z-index:1010;
+	background:#fff;
+	border-radius: 0.06rem;
+	padding:0.22rem 0.12rem;
+}
+.buyLend_popUp h2{
+	font-size: 0.32rem;
+	text-align: center;
+	padding-top:0.22rem;
+	padding-bottom:0.22rem;
+	border-bottom:0.04rem solid #fc651c;
+	color:#fc651c;
+}
+.buyLend_popUp_cont p{
+	text-align: center;
+}
+.buyLend_popUp_cont p:first-child{
+	font-size: 0.4rem;
+	color:#ff1b1b;
+	padding:0.4rem 0;
+}
+.buyLend_popUp_cont p:last-child{
+	color:#686767;
+	font-size: 0.28rem;
+}
+.index_popP p:first-child{
+	text-align:left;
+	font-size: 0.32rem;
+	color:#222;
+	padding:0.1rem 0;
+}
+.index_popP p:nth-child(2){
+	text-align:left;
+	font-size: 0.32rem;
+	color:#222;
+}
+.index_popP p:last-child{
+	text-align:center;
+	font-size: 0.32rem;
+	color:#222;
+}
+.buyLend_popUp_btn{
+	text-align:center;
+	padding:0.4rem 0;
+	margin-top:0.2rem;
+}
+.buyLend_popUp_btn>span{
+	display:block;
+	float:left;
+	width:50%;
+	text-align: center;
+}
+.buyLend_popUp_btn>span.allWidth{
+	width:100%;
+	display: initial;
+}
+.buyLend_popUp_btn span span{
+	display: block;
+	width:90%;
+	height:0.7rem;
+	line-height: 0.7rem;
+	font-size: 0.32rem;
+	background: #f2f2f2;
+	border:1px solid #e8e8e8;
+	border-radius: 0.06rem;
+	color:#222;
+	box-sizing:border-box ;
+	margin:0 auto;
+}
+.buyLend_popUp_btn>span.allWidth span{
+	width:50%;
+}
+.buyLend_popUp_btn span span.spanBlue{
+	background:#fc651c;
+	border:1px solid #d06802;
+	border-radius: 0.06rem;
+	color:#fff;
+	box-sizing:border-box ;
+}
+.buyLend_popUp_contWidth{
+	width:5.6rem;
+	margin:0.3rem auto;
+	text-align: center;
+}
+.buyLend_popUp_contWidth input{
+	float:left;
+	display: inline-block;
+	width:0.93rem;
+	height:0.93rem;
+	border-top:1px solid #e8e8e8;
+	border-bottom:1px solid #e8e8e8;
+	border-left:1px solid #e8e8e8;
+	box-sizing: border-box;
+	text-align: center;
+	background:#f8faf7;
+	font-size: 0.32rem;
+}
+.buyLend_popUp_contWidth input:last-child{
+	border-right:1px solid #e8e8e8;
+}
+.buyLend_popUp_img{
+	position: absolute;
+	top:0.22rem;
+	right:0.22rem;
+}
+.buyLend_popUp_img img{
+	width:0.44rem;
+}
+/*弹出层end*/
+.login_close:active {
+    color: #999999;
+}
+.login_close {
+    position: absolute;
+    right:0;
+    top:0;
+    font-size: 1.2em;
+    color: #444;
+    padding:0.4rem;
+}
+
+/* 添加tab切换和响应内容 */
+._lLoginCont{
+	width:100%;
+}
+._lLoginCont_tab li{
+	float:left;
+	display: block;
+	width:50%;
+	height:0.9rem;
+	line-height: 0.9rem;
+	font-size:0.28rem;
+	background: #ccc;
+	text-align: center;
+}
+._lLoginCont_tab li.row{
+	background: #fff;
+}
+._lVerificationCode{
+	position: absolute;
+    right: 0.2rem;
+    top: 0.09rem;
+    height: 0.29rem;
+    line-height: 0.29rem;
+    padding: 10px;
+    background: #fe7500;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 0.28rem;
+}
+.codeColor{
+    background: #ededed;
+    color: #929292;	
+}
+.colorSTyle{
+	background: #ededed;
+    color: #929292;
+    font-size: 0.26rem;
+}
+.colorSTyle span{
+	color: #e80204;
+    padding: 0 5px;
+    font-size: 0.28rem;
+}
+._lh1_passWord{
+	font-size:0.3rem;
+	margin-bottom:0.2rem;
+}
+.spanFen{
+	padding:0 0.1rem;
+}
+._lRegPrompt {
+    padding: 0.2rem 0 0 0;
+    font-size: 0.3rem;
+    text-align: right;
+    padding-right: 0.22rem;
+    color: #ccc;
+}
+._lRegPrompt span {
+    color: #fc6d1e;
+    font-weight: bold;
+}
+
+/*关联样式*/
+.container{
+	background: #f7f7f7;
+    position: absolute;
+	top:0;
+	left: 0;
+	right: 0;
+	bottom:0;
+}
+.login_footer{
+	position:absolute;
+	font-size: .26rem;
+	color: #999;
+	left:50%;
+	bottom: .5rem;
+	transform: translate(-50%,0);
+}
+.wx_login_header img{
+	display: block;
+	width: 1.2rem;
+	height: 1.66rem;
+	margin: .8rem auto;
+}
+.wx_login_username{
+	margin-bottom: .2rem;
+}
+.wx_login_input{
+	width: 100%;
+	height: 1rem;
+	background:#fff;
+	border-top: 1px solid #f2f5f7;
+	border-bottom: 1px solid #f2f5f7;
+}
+.wx_login_input .wx_userleft{
+	width: 1.42rem;
+	display: inline-block;
+    font-size: .28rem;
+	color: #666;
+	margin:0 .2rem  0 .3rem;
+}
+.wx_login_input input::-webkit-input-placeholder{
+	color: #ccc;
+}
+.wx_login_input input{
+	height: 1rem;
+	width: 3.5rem;
+	font-size: .28rem;
+	color: #666;
+}
+.wx_login_subbtnNOClick{
+	margin: .8rem auto 0;
+	height: .88rem;
+	width: 6.9rem;
+	line-height: .88rem;
+	text-align: center;
+	border-radius: 8px;
+	font-size: .3rem;
+	background: #fc761c;
+	color: #fff;
+}
+.wx_login_subbtnNOClick a{
+	color: #fff;
+}
+.wx_login_bottom{
+	width: 6.9rem;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: row;
+    justify-content: space-between;
+	font-size: .3rem;
+	text-decoration: underline;
+	color: #777;
+	margin: .2rem auto 0;
+}
+.wx_loginForgetpwd a{
+	color: #fc761c;
+}
+.wangjimima a{
+	color: #777;
+}
+.wx_login_right{
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: row;
+}
+.wangjimima{
+	margin-left: .3rem;
+}
+
+
+
+
+
+
+
+
+

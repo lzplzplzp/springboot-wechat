@@ -1,0 +1,216 @@
+/*header begin*/
+.header {
+  width: 100%;
+  height: 60px;
+  background: url('/images/top.png') no-repeat;
+  line-height: 60px;
+  overflow: hidden;
+}
+.header img {
+  float: left;
+  margin: 7px 20px 0 3.5%;
+  height: 46px;
+}
+.header h3 {
+	
+  float: left;
+  font-size: 18px;
+  color: white;
+}
+.header p {
+  float: right;
+  margin: 20px 10px 0 0;
+  font-size: 14px;
+  color: white;
+}
+.header p a{
+  cursor: pointer;
+}
+/*left begin*/
+.left {
+  float: left;
+  width: 240px;
+  background: #f0f5f9;
+  border-right: 1px solid #cbcbcb;
+  font-size: 15.5px;
+}
+.left .left-top {
+  padding-left: 50px;
+  height: 50px;
+  background: #5f8fe9;
+  color: white;
+  font-size: 18px;
+  line-height: 50px;
+}
+.left .first-ul {
+  border-top: 1px solid #cbcbcb;
+}
+.left .first-ul .first-li {
+  cursor: pointer;
+}
+.left .first-ul .first-li p {
+  width: 190px;
+  padding-left: 50px;
+  line-height: 34px;
+  background: url("../images/linear1.png");
+  overflow: hidden;
+}
+.left .first-ul .first-li p i {
+  float: right;
+  width: 34px;
+  height: 34px;
+  background: url("/images/right.png");
+}
+.left .first-ul .first-li p i.down {
+  float: right;
+  background: url("/images/down.png");
+  width: 34px;
+  height: 34px;
+}
+.left .first-ul .first-li ul {
+  line-height: 30px;
+  background: white;
+}
+.left .first-ul .first-li ul li {
+  padding-left: 50px;
+  font-size: 14px;
+  color: #3a3a3a;
+}
+.left .first-ul .first-li ul li.bg {
+  background: #ebeae4;
+}
+.left .kong {
+  height: 200px;
+}
+/*right begin */
+.right {
+  background: white;
+}
+.right .top {
+  padding-left: 20px;
+  height: 30px;
+  background: url("/images/linear2.png");
+  line-height: 30px;
+  font-size: 16px;
+  border-bottom: 1px solid #cbcbcb;
+}
+.right .form-list {
+  margin-top: 15px;
+}
+.right .form-list li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.right .form-list li select,
+.right .form-list li button,
+.right .form-list li input {
+  background: #f5f9fa;
+  height: 24px;
+}
+.right .form-list li input {
+  border: none;
+  outline: none;
+  border: 1px solid #cbcbcb;
+  padding-left: 6px ;
+}
+.right .form-list li button {
+  cursor: pointer;
+  width: 50px;
+  background: #5BC0DE;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+.right .form-list li button.bg {
+  background: #0000ff;
+}
+.right button {
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  margin-left: 20px;
+  margin-top: 30px;
+  height: 24px;
+  width: 100px;
+  background: #5f8fe9;
+}
+.right button.bg {
+  background: #0000ff;
+}
+.right .main-list {
+  margin: 30px auto;
+  width: 96%;
+  height: 40px;
+}
+.right .main-list .t-head {
+   background: #f5f9fa;
+}
+.right .main-list td {
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+}
+
+ .control-group{
+    margin-left: 20%;
+    height: 50px;
+    line-height: 50px;
+}
+.control-group .control-label{
+    font-size: 18px;
+    line-height: 50px;
+    float: left;
+    width: 100px;
+    text-align: right;
+}
+.control-group .controls{
+    float: left;
+    margin-left: 15px;
+}
+.control-group .controls input{
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+.control-group .help-inline{
+    line-height: 30px;
+    height: 30px;
+}
+.form-actions{
+    margin-left: 22%;
+}
+.form-actions button{
+    margin-top: 20px;
+    width: 150px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background:#017AFD ;
+    outline: none;
+
+}
+
+.bk_glay{
+  background-color: #f5fafe;
+  border: solid 1px #eee;
+  padding: 5px;
+  margin-top: 20px;
+}
+.bk_glay .btn{
+  color: #fff;
+  background-color: #5BC0DE;
+  border: none;
+  font-size: 16px;
+  height: 21px;
+  line-height: 21px;
+  padding: 4px 12px;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 2px 5px;
+  cursor: pointer;
+}

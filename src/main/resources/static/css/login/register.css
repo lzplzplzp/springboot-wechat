@@ -1,0 +1,160 @@
+._lRegCont{
+	margin:0.4rem 0.3rem 0.5rem 0.3rem;
+	border:1px solid #ffd2b6;
+	border-radius:0.06rem;
+	background: #fff;
+}
+._lRegCont ._lRegInput{
+	width:100%;
+	height:1.2rem;
+	position: relative;
+	border-bottom:1px solid #ffd2b6;
+}
+._lRegCont ._lRegInput input{
+	padding:0.4rem 0rem 0.1rem 0.9rem;
+	font-size: 0.32rem;
+	width:5.7rem;
+	color:#222;
+}
+._lRegCont ._lRegInputBordeNo{
+	border-bottom:0;
+}
+._lRegCont ._lRegPrompt{
+	padding:0.2rem 0 0 0;
+	font-size: 0.3rem;
+	text-align: right;
+	padding-right:0.22rem;
+	color:#ccc;
+}
+._lRegCont ._lRegPrompt span{
+	color:#f3ad08;
+	font-weight: bold;
+}
+._lRegCont ._lRegPrompt label{
+	color: #e80204;
+	padding:0 8px;
+}
+._lRegCont ._lRegInput img._lRegInputEyeBtn,._lRegCont ._lRegInput img._lRegInputEyeBtnClose{
+	position: absolute;
+	width:0.44rem !important;
+	right:0.2rem;
+	top:50%;
+	margin-top:-0.26rem;
+	z-index: 100;
+	padding:0 0 0 0.4rem;
+}
+._lRegCont ._lRegInput img._lRegInputEyeBtnTwo{
+	right:1.08rem;
+}
+._lRegCont ._lRegInput img._lRegInputIco{
+	position: absolute;
+	left:0.26rem;
+	width:0.5rem;
+	top:0.3rem;
+	z-index: 100;
+}
+
+
+._lRegCont ._lRegInput img._lRegInputEyeBtnLeft{
+	right:2.92rem;
+}
+
+._lRegCont ._lRegInput p{
+	position: absolute;
+	width:2.2rem;
+	height:0.68rem;
+	line-height: 0.7rem;
+	text-align: center;
+	right:0.2rem;
+	top:50%;
+	margin-top:-0.34rem;
+	font-size: 0.3rem;
+	background: #ffcd47;
+	color:#fff;
+	border-radius:30px;
+	overflow: hidden;
+}
+._lRegCont ._lRegInput p.regInputCodeClick{
+	background: #ebbd43;
+}
+._lRegCont ._lRegInput p.regCodePTwo{
+	background: #ededed;
+    color: #929292;
+    font-size: 0.26rem;
+}
+._lRegCont ._lRegInput p.regCodePTwo span{
+	color: #e80204;
+	padding:0 5px;
+	font-size: 0.28rem;
+}
+._lRegCont ._lRegInput p.regCodePThree{
+	background: #ededed;
+    color: #cfcfce;
+    font-size: 0.26rem;
+}
+._lRegAgree{
+	text-align: center;
+	width:6.5rem;
+	position: relative;
+	margin:0 auto;
+	font-size: 0.24rem;
+	color:#222;
+	padding-left:0.4rem;
+	height:0.4rem;
+	line-height:0.4rem;
+	text-align: left;
+}
+._lRegAgree .agreeSpan{
+	position: absolute;
+	display: block;
+	width:1.2rem;
+	height:0.3rem;
+	top:50%;
+	left:0;
+	margin-top:-0.12rem;
+}
+._lRegAgree .agreeSpan img{
+	position: absolute;
+	display: block;
+	width:0.2rem;
+	height:0.2rem;
+	top:0;
+	left:0.1rem;
+}
+._lRegAgree b{
+	color:#EBBD43;
+	font-weight:normal;
+}
+._lRegBtnPadding{
+	margin-top:0.4rem;
+}
+.codeSpanClick{background:#ebbd43}
+#container{
+	position: relative;
+}
+.serviceTelephone{
+	position: absolute;
+	bottom:0.5rem;
+	color:#b4b4b4;
+	font-size: 0.32rem;
+	width:100%;
+	text-align: center;
+}
+._lRegCont ._lRegInputBordeMarin{
+	margin-bottom:0.2rem;
+	background: #fff;
+	height:0.9rem;
+}
+._lRegCont ._lRegInputBordeMarin input{
+	padding-left:0.2rem;
+	padding-top:0.28rem;
+	
+}
+._lCodeText{
+	font-size:0.28rem;
+	color: #222;
+	margin-bottom:0.25rem;
+}
+._lCodeTextMarin{
+	margin-top:0.4rem;
+}

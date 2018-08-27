@@ -1,0 +1,594 @@
+/*禁止app黏贴功能*/
+body{
+	position: relative;
+	-webkit-overflow-scrolling: touch;
+	 -webkit-overflow-scrolling: touch;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -o-user-select:none;
+    user-select:none;
+}
+[contenteditable = "true"], input, textarea {
+    -webkit-user-select: auto!important;
+    -khtml-user-select: auto!important;
+    -moz-user-select: auto!important;
+    -ms-user-select: auto!important;
+    -o-user-select: auto!important;
+    user-select: auto!important;
+} 
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,code,form,fieldset,legend,button,input,textarea{padding:0px; margin:0px; border:none;}
+a,a:visited{ color:#333; text-decoration:none;}
+
+a:active,
+
+a:hover { text-decoration:none;}
+
+a:focus,
+
+input:hover,
+
+button:hover,
+
+input[type='button']:hover{ outline:none;}
+
+i, 
+
+em, 
+
+cite { font-style: normal; }
+
+li{ vertical-align:bottom;  list-style-type:none;}
+body, 
+button, 
+input, 
+select, 
+textarea{ font-family:"Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif; outline:none;}
+/* 禁止webkit横屏改变字体大小 */
+html{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;}
+/* 设置HTML5元素为块 */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {display:block;padding:0px; margin:0px;  border:none;}
+/* 超出隐藏 */
+.overflow{ overflow:hidden;} 
+/* 点击去除阴影 */
+button,input,i,li,a,span,div{-webkit-tap-highlight-color:rgba(255,0,0,0); -moz-tap-highlight-color:rgba(0,0,0,0); -ms-tap-highlight-color:rgba(0,0,0,0);tap-highlight-color:rgba(0,0,0,0);}       
+/* float */
+.fl{ float: left; }
+.fr{ float: right;}
+/* 图片自适应调整 并解决图片缩放的失真问题*/
+img{ max-width:100%; height:auto;border:none; interpolation-mode: bicubic; vertical-align: middle;}
+/* 文字居中 */
+.txt-center{ text-align:center;}
+.txt-justify{ text-align:justify; text-justify:inter-ideograph;}
+/* 自动换行 */
+.word-auto{word-wrap: break-word;word-break: normal;}
+/* 自动居中 */
+.mg-auto{ margin-left:auto; margin-right:auto; position:relative;}
+/* clearfix */  
+.clearfix:after{ visibility: hidden;display: block;font-size: 0;content:" ";clear: both;height: 0;}
+.clearfix{ *zoom:1;}
+input,textarea{
+  -webkit-appearance: none; /*去除苹果input内阴影*/
+ }
+/* transtion-Hover */
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { 
+	color: #CCC;
+	line-height: normal;
+} 
+input:-moz-placeholder, textarea:-moz-placeholder { 
+	color: #CCC;
+	line-height: normal;
+} 
+input::-moz-placeholder, textarea::-moz-placeholder { 
+	color: #CCC;
+	line-height: normal;
+} 
+input:-ms-input-placeholder, textarea:-ms-input-placeholder { 
+	color: #CCC;
+	line-height: normal;
+}
+.tianstion{
+    transition:all ease 0.4s; 
+	-moz-transition:all ease 0.4s; 
+	-ms-transition:all ease 0.4s; 
+	-o-transition:all ease 0.4s;
+	-webkit-transition:all ease 0.4s;
+}
+.area{ width:100%;}
+
+@media screen and (max-width : 360px) {	
+	body{ font-size:11px;}
+
+}
+@media screen and (min-width: 360px) and (max-width : 479px) {
+	body{ font-size:12px;}
+
+}
+@media screen and (min-width: 480px) and (max-width: 640px) {
+
+	body{ font-size:15px;}
+
+
+}
+
+.clearfix::after {
+    clear: both;
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    visibility: hidden;
+}
+.span_Orange {
+	color: #FC651E;
+	
+}
+.span_left_padding{
+	padding-left: 20px;
+	
+}
+.colorbutton {
+	background: #fc6e1b;
+}
+/*达赏按钮颜色*/
+.colorreach {
+	background: #ff4d4d;
+}
+.notcolorbutton {
+	background: #fee9dd;
+}
+.notcolor {
+	color: #FFF;
+	
+}
+
+.colorc1 {
+	background: #c1c1c1;
+}
+.colorF {
+	color: #FFF;
+	
+}
+.color9 {
+	color: #999999;
+	
+}
+.color2 {
+	color: #222222;
+	
+}
+.color_cs {
+	color: #FD651A;
+}
+.color_bb {
+	color: #bbbbbb;
+}
+
+.color_22 {
+	color: #222222;
+}
+.font-sizesit {
+	font-size: 1.3em;
+	
+}
+.font-size6 {
+	font-size: 1.5em;
+	
+}
+.font-size5 {
+	font-size: 1.2em;
+	
+}
+.font-size4 {
+	font-size: 1.4em;
+	
+}
+.font-size3 {
+	font-size: 1.2em;
+	
+}
+.font-size2 {
+	font-size: 1.2em;
+	
+}
+.font-size1 {
+	font-size: 1em;
+	
+}
+.marginbottom3 {
+	margin-bottom: 3%;
+	
+}
+.span_opacity4 {
+	opacity:0.5;
+	background: #ccc;
+}
+.span_tm{
+	opacity:0.5;	
+}
+.marginbottom5 {
+	margin-bottom: 5%;
+}
+
+/* SelectControl */
+.SelectControl .arrow{background:url(../img/arrowupdown.png) no-repeat;width:28px;height:25px;overflow:hidden;display:inline-block;float:right;margin:-21px 0px 0 0;}
+.SelectControl{border:solid 1px #D2D2D2;   border-radius: 3px; height:25px;width:90px;background:#fff;position:relative;margin:0px auto;  cursor:pointer;}
+.SelectControl .arrow{background-position:0 0;}
+.SelectControl input{background:none;border:none;margin:6px 0 0 6px;  font-size:12px;cursor:pointer;float:left;display:inline;}
+.SelectControl ul{position:absolute;left:-1px;top:26px; z-index: 99; border-width:0px 1px 1px 1px;border-style:solid;border-color:#D2D2D2;background:#fff;}
+.SelectControl li{height:24px;line-height:24px;overflow:hidden;padding:0 6px;cursor:pointer;}
+.SelectControl li.on{background:#355EFF;color:#fff;}
+.select_positon {
+	position: absolute;
+	top: 10px;
+}
+
+
+
+.main{background-color:#fff;width:100%;min-width:320px;max-width:640px;min-height:300px;margin:0 auto;}
+.main img{vertical-align:top}
+.banner{position:relative;width:100%;overflow:hidden}
+.new-banner-num{position:absolute;left:0;bottom:3px;width:100%;height:10px;text-align:center}
+.new-banner-num .new-tbl-cell{display:inline-block;width:7px;height:7px;margin-left:7px;border-radius:6px;background-color:#fff;text-indent:-9999px}
+.new-banner-num .new-tbl-cell a{display:block}.new-banner-num .new-tbl-cell.on{background-color:#e4393c}
+.scroll-wrapper{width:100%;margin:0 auto;max-width:640px;overflow:hidden}
+.scroll-wrapper .scroller{list-style:none}
+.scroll-wrapper .scroller li{float:left;text-align:center}
+.scroll-wrapper .scroller li img{width:100%;min-width:320px;max-width:640px;height:auto;max-height:240px;min-height:132px}
+.new-tbl-type{display:table;width:100%}
+.new-tbl-cell{display:table-cell}
+
+
+/*背景弹层*/
+
+#app_screen {
+	background: #000 none repeat scroll 0 0;
+	display: none;
+	left: 0;
+	display: none;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	z-index: 9998;
+}
+
+
+#app_screen01 {
+	position: fixed; 
+	height: 100%;
+	width: 100%;
+	background: #000;
+	background: rgba(0,0,0,.0);
+	filter:Alpha(opacity=00);
+	z-index: 19;
+	display: none;
+	top: 0;
+	left: 0; 
+}
+.br_width {
+	white-space:normal;
+	word-break:break-all;
+	word-wrap : break-word;
+}
+.situ_cons {
+	width:100%;
+	overflow: hidden;
+	margin:0 auto;
+}
+
+/*页面底部小图标css*/
+.mui-bar-tab .mui-tab-item{
+	      color:#666;
+	      padding:0; 
+	      white-space: normal 
+}			
+.mui-bar .mui-tab-item .iconrep{
+	     top:15%;
+	     width:26px;
+	     height:26px;
+         position: relative;     
+         z-index:20px;
+         display: inline-block;
+}
+.mui-bar .mui-tab-item .iconrep img{
+	   max-width:100%;
+	   position:absolute;
+	   display: inline-block;
+	   left:0;
+}
+.mui-bar .mui-tab-item .iconwd{
+	    width:100%;
+	    height:15px;
+	    line-height:15px;
+	    display: inline-block;
+}
+.mui-bar .mui-tab-item .iconrep label{
+	position: absolute;
+	right:-0.05rem;
+	top:-0.02rem;
+	width:0.18rem;
+	height:0.18rem;
+	background:#f53532;
+	border-radius:0.09rem;
+	border:1px solid #fff;
+}
+/*公用按钮css*/
+
+.z_submitBtn {
+	width: 94%;
+	margin: 0 auto;
+	height: 45px;
+	font-size: 20px;
+	border-radius: 5px;
+	color:#FFF;
+	cursor: pointer;
+	margin-top: 10%;
+	background: #FC6D1E;
+}
+
+.z_submitBtn a{
+	color: #FFF;
+	width: 100%;
+	text-align: center;
+	border-radius: 5px;
+	line-height: 45px;
+	display: inline-block;
+	height: 45px;
+	text-align: center;
+
+}
+
+
+/*tab 切换按钮*/
+
+
+.z_financ_bag {
+	width:100%;
+	position:fixed;
+	z-index:99;
+	top:50px;
+	background:#F2F2F2;
+	overflow: hidden;
+	height: 60px;
+}
+.z_financial_mark_class {
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 5%;
+	height: 35px;
+	position:fixed;
+	top:60px;
+	background:#FFF;
+	left:10%;
+	z-index:100;
+	border: 1px solid #2C90FD;
+	border-radius: 3px;
+}
+.z_financial_mark_class li {
+	float: left;
+	width: 50%; 
+	box-sizing: border-box;
+	height: 35px;
+	color: #559FFC;
+	line-height: 35px;
+	text-align: center;
+}
+.z_financial_mark_class .row {
+	background: #007AFF;
+	color: #FFF;
+	border-right: 1px solid #007AFF;
+}
+
+/*黑色背景遮罩层*/
+.z_black_ground{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    background: rgba(0,0,0,.3);
+    filter: Alpha(opacity=30);
+    z-index: 1000;
+    display: none;
+    top: 0;
+    left: 0;
+}
+/*线下分期页面遮罩 */
+._lbackPop{
+	position: fixed;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    background: rgba(0,0,0,.3);
+    filter: Alpha(opacity=30);
+    z-index:10;
+    display: none;
+    top: 0;
+    left: 0;
+}
+.border-radius {
+	border-radius:5px;	
+}
+.padbottom50 {
+	padding-bottom:50px;
+}
+.public_con {
+	width:100%;
+	overflow:hidden;
+}
+.hide{
+	display: none;
+}
+
+.z_submitBtnNo{ background: #ECEAE9;}
+.objRowOver{
+	background: #eaeaeb !important;
+}
+/*鼠标置灰*/
+.public_btnNoClick{
+	height:0.86rem;
+	line-height:0.86rem;
+	text-align: center;
+	font-size:0.38rem;	
+	margin:0 0.3rem;
+	border-radius:6px;
+	background:rgba(252,101,18,0.3);
+	color:rgba(255,255,255,0.4);
+}
+/*鼠标按钮正常颜色*/
+.public_btn{	
+	height:0.86rem;
+	line-height:0.86rem;
+	text-align: center;
+	font-size:0.38rem;
+	margin:0 0.3rem;
+	border-radius:6px;
+	background:rgba(252,101,18,1);
+	color:rgba(255,255,255,1);
+
+}
+/*鼠标长按事件变色*/
+.public_btn:active{
+	background:#e25917;
+	color:rgba(255,255,255,1);
+}
+
+
+/* 电话弹出层 */
+.col-popover{
+	position: absolute;
+	bottom:-5rem;
+	left:0;
+	z-index:1100;
+	text-align: center;
+	width:100%;
+	
+}
+.col-popover-view{
+	border-radius: 0.1rem;
+	background: #fff;
+	width:7.2rem;
+	margin:0.1rem auto 0 auto;
+}
+.col-popover-view li{
+	border-bottom:1px solid #f2f5f7;
+	height:0.9rem;
+	line-height: 0.9rem;
+	color: #fc651c;
+	font-size:0.32rem;
+}
+.col-popover-view li.tuColsj{
+	color:#222;
+}
+.col-popover-view li:active{
+	background:#f2f2f2;
+}
+.col-popover-view li:last-child{
+	border-bottom:0px solid #e0dfe2;
+}
+ 
+/*默认按钮状态
+* 引用方式 <div class="commonBottom commonShowBottomColor">当月没有取现机会</div>
+* */
+.commonBottom {
+	width: 6.9rem;
+	height: 0.86rem;
+	/* Firefox */
+	display:-moz-box;
+	-moz-box-pack:center;
+	-moz-box-align:center;
+	/* Safari, Chrome, and Opera */
+	display:-webkit-box;
+	-webkit-box-pack:center;
+	-webkit-box-align:center;
+	/* W3C */
+	display:box;
+	box-pack:center;
+	box-align:center;
+	color: rgba(255,255,255,0.4);
+	margin: 0 auto;
+	font-size: 0.38rem;
+	border-radius:6px;
+	background: rgba(252,101,28,0.3);
+}
+/*常显可点击状态*/
+.commonShowBottomColor {
+	background: rgba(252,101,28,1);
+	color: rgba(255,255,255,1);
+}
+/*常显可点击切换色样式*/
+.commonShowBottomColor:active {
+	background: rgba(226,89,23,1);
+}
+/*不可点击置灰样式*/
+.commonNoClickBottomColor {
+	background: rgba(218,219,221,1);
+	color: rgba(255,255,255,1);
+}
+.mui-bar-tab .mui-tab-item.mui-active {
+	color: #fc651c;
+}
+/*可滚动样式*/
+.scroll-y {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  position: absolute;
+  top: 0;
+  bottom: 54px;
+  left: 0;
+  right: 0;
+}
+.scroll-y::-webkit-scrollbar {
+display: none;
+}
+.scroll-y-ios {
+	position: absolute;
+	width:100%;
+	height: 1px;
+	bottom: -2px;
+	display: none;
+}
+.statusbar{
+	height: .4rem;
+}
+.imgStartLoad{
+	opacity: 0;
+	-webkit-transition: opacity 2s;
+	transition: opacity 2s;
+}
+.imgStartLoad.end{
+	opacity: 1;
+}
+.displayflex{
+	display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box; /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+    display: flex; /* 新版本语法: Opera 12.1, Firefox 22+ */
+}
+.justify-content-c{
+	-webkit-box-pack: center;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    text-align: center;
+    line-height:60px;
+}
+.align-items-c{
+	-webkit-box-align: center;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    align-items: center;
+    text-align: center;
+}
+/* 底部导航CSS结束 */
+.z_wdcorl {
+    background-color: #fff;
+    width: 100%;
+    height: 1rem;
+    box-shadow: 0 0 2px 0 rgba(183,183,183,0.50);
+}
+.z_wdcorl .iconrep {
+    width: .44rem !important;
+    height: .44rem !important;
+}
+/* 底部导航CSS结束 */

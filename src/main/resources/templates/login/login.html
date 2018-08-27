@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0 , maximum-scale=1.0, user-scalable=0" />
+		<meta name="format-detection" content="telephone=no" />
+		<title>登录</title>
+		<link type="text/css" href="../static/css/public.css"  rel="stylesheet"/>
+		<link type="text/css" href="../static/css/top.css"  rel="stylesheet"/>
+	    <link type="text/css" href="../static/css/login/loginReg.css?v=20180619" rel="stylesheet"/>
+	    <link type="text/css" href="../static/css/app_popup.css"  rel="stylesheet"/>
+	    <script src="../static/scripts/rem_scaler.js"></script>
+	</head>
+<body>
+<section>
+    <div class="login_close" style="z-index:100;display:none" onclick="backToPage()">取消</div>
+	<!-- 登录界面 -->
+	<article id="div_login">
+	  <div class="login_new" style="display:none;">
+			<!--密码登录 -->
+			<div id="container" class="container" style="display:block">
+	
+				 <!-- 登录头像 strart -->
+				<header class="wx_login_header">
+						<h1 id="h1_img"><img id='userPhoto' src='http://img.dafy.com/mall/mallIndex/img/20180612/logo@2x.png' /></h1>
+				</header>
+				<!-- 登录头像 end -->
+
+				<!-- 登录用户名-->
+				<div  class="wx_login_username wx_login_input">
+					<span class="wx_userleft">手机号码</span>
+					<input  name="strUserName" id="strUserName" maxlength="11" placeholder="请输入11位手机号码" type="tel" />
+				</div>
+				<!-- 登录用户名-->
+				 <!-- 登录密码-->
+				<div class="wx_login_pwd wx_login_input">
+					<span class="wx_userleft">密码</span>
+					<span id="pass">
+						<input  name="strPassword" id="pwd" placeholder="请输入密码" type="password" maxlength="30"/>
+					</span>
+				</div>
+
+				<!-- 登录提交按钮-->
+				<div class=" wx_login_subbtnNOClick" id="loginPassword">登录</div>
+				<!-- 登录提交按钮-->
+				<!-- 忘记登录密码-->
+				<div class="wx_login_bottom">
+					<div class="wx_loginForgetpwd" ><a href="javascript:void(0)" onclick="toRegister()">注册新用户</a></div>
+					<div class="wx_login_right">
+						<div class="wx_login_toRegist" id="moblieCodeLogin">短信验证码登录</div>
+						<div class="wangjimima"><a href="javascript:void(0)" onclick="toRetrievePassword()">忘记密码?</a></div>
+					</div>
+					<input type="hidden" id="islogintype" value="0"/>
+
+				</div>
+				<!--默认不显示，只在微信端显示-->
+				<footer class="login_footer" style="display: none">登录后将自动关联您的微信账号</footer>
+	
+			</div>	
+		    <!--短信验证码登录 -->
+		    <div id="container2" style="display:none">
+				<!-- 登录头像 strart -->
+					<header class="z_login_header">	
+						<div class="z_userphoto_section clearfix">
+						   <div class="_lh1_passWord">短信验证码登录</div>
+							<h1 id="h1_img"><img id='userPhoto' src='http://img.dafy.com/mall/login/img/20180108/userPhoto.png' /></h1>			
+						</div>
+					</header>
+				      <!-- 登录头像 end -->
+				
+				    <!-- 登录用户名-->
+					<div  class="z_login_username clearfix font-size3">
+						<span class="z_userleft_img"><img src="http://img.dafy.com/mall/login/img/20180108/login_username.png"/></span>
+						<input  name="strUserName" id="strMobile" maxlength="11" placeholder="请输入手机号" type="number" verify="1" msg="手机号" />	
+					</div>	
+				    <!-- 登录用户名-->
+				    <!-- 验证码-->
+					<div class="z_login_pwd clearfix  font-size3">
+						<span class="z_userleft_img">
+							<img src="http://img.dafy.com/mall/login/img/20180108/login_pwd.png"/>
+						</span>
+						<span id="pass"> 
+							<input  name="strPassword" id="strCode" placeholder="请输入验证码" type="number" maxlength="4" verify="2" msg="验证码" />
+						</span>
+						<div class="_lVerificationCode" id="btnCodeId_0">获取验证码</div>
+						<div class="_lVerificationCode codeColor" id="btnCodeId_1" style="display:none;">获取验证码</div>
+						<div class="_lVerificationCode colorSTyle" id="btnCodeId_2" style="display:none;">重新获取<span>60</span>s</div>
+					</div>
+				    <!-- 验证码-->
+				    <div class="_lRegPrompt" style="display:block" id="btnVoiceId_0">
+						收不到短信？<span>免费语音获取</span>
+					</div>
+					<div class="_lRegPrompt" style="display:none" id="btnVoiceId_1">
+						收不到短信？免费语音获取
+					</div>
+					<div class="_lRegPrompt" style="display:none" id="btnVoiceId_2">
+						拨打中... 请注意接听<span>60</span>s
+					</div>
+				<!-- 登录提交按钮-->
+					<div class="z_login_subbtnNOClick" id="btnNextStep" style="margin-top:2%"><a href="javascript:void(0)" >登录</a></div>
+				<!-- 登录提交按钮-->
+					<input type="hidden" id="islogintype" value="0"/>
+					<div class="z_login_bottom  clearfix">
+						<div class="z_login_toRegist" id="mobliePassWordLogin">手机密码登录</div>			
+						<div class="z_loginForgetpwd" ><a href="javascript:void(0)" onclick="toRegister()">注册</a></div>
+					</div>
+			</div>
+	  </div>
+	</article>
+</section>
+
+
+</body>
+<script type="text/javascript" src="../static/scripts/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="../static/scripts/login/login.js"></script>
+</html>

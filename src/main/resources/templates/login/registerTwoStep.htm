@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0 , maximum-scale=1.0, user-scalable=0">
+		<meta name="format-detection" content="telephone=no">
+		<title>注册</title>
+		<link type="text/css" href="../common/css/public.css"  rel="stylesheet"/>
+		<link rel="stylesheet" href="../mallIndex/css/goodTop.css">
+	    <link type="text/css" href="../common/css/body_backcolor.css"  rel="stylesheet"/>
+	    <link type="text/css" href="../../static/css/login/register.css?v=20180115" rel="stylesheet"/>
+	    <script src="../common/js/rem_scaler.js"></script>
+	    <script src="../common/js/statistics.js"></script>
+	</head>
+	
+	<body>
+		<div class="mallHeaderHeight">
+			<div class="mallFixedTop">
+				<div class="mallDetallTop clearfix">		
+					<img src="http://img.dafy.com/mall/mallIndex/img/20180108/top/mallback.png" onclick="back()">
+					<span class="mallTopTitle">设置密码</span>								
+				</div>
+			</div>
+		</div>
+		<!-- <header class="_Wedafytop">
+			<div class="_Wedafytopback">
+				<div class="_Wedafytop_positon">
+						<div class="_Wedafytop_return font-size5" onclick="back()">
+							<img src="../common/img/top/_We_return.png"/>返回
+						</div> 
+						<div class="_Wedafytop_title font-size6">设置密码</div>
+				   </div>
+			</div>
+	    </header> -->
+	    <div id="mainDivId">
+			<div id="container">
+				<input type="hidden" id="strMobile"/>
+				<input type="hidden" id="islogintype" value="0"/>
+				
+				<div class="_lRegCont">
+					<div class="_lRegInput _lRegInputBordeNo">
+						<img class="_lRegInputIco" src="http://img.dafy.com/mall/login/img/20180108/regPassWord.png"  />
+						<input id="strPassword"  type="password" maxlength="20"  placeholder="6-20位数字、字母或者字符密码组合" verify="4"/>
+					    <img class="_lRegInputEyeBtnClose" src="http://img.dafy.com/mall/login/img/20180108/regCloseEye.png"  />
+					    <img class="_lRegInputEyeBtn _lRegInputEyeBtnTwo" src="http://img.dafy.com/mall/login/img/20180108/regClose.png" style="display:none;" />
+					</div>
+				</div>
+				<div class="_lRegAgree">
+					<div class="agreeSpan"><img src="http://img.dafy.com/mall/login/img/20180108/resAdioHover.png"/></div>我已阅读并同意<b>
+					<label id="xieyi1">《达飞注册协议》</label>
+					<label id="xieyi2">《CFCA 证书服务协议》</label></b>
+				</div>
+				<div class="public_btnNoClick _lRegBtnPadding" id="btnRegister">注册</div>
+			</div>
+			<div class="serviceTelephone">客服电话：400-6259-898</div>
+		</div>
+</body>
+</html>
+<script>
+	document.write('<script type="text/javascript" src="../common/js/includeCommon.js?'+ new Date().getTime()+'" level="1"><\/script>');
+</script>
+<script type="text/javascript" src="../common/js/muiJS/mui.min.js"></script>
+<script>
+    document.write('<script type="text/javascript" src='+WeChat_version+'"../../static/scripts/login/registerTwoStep.js?"><\/script>')
+</script>

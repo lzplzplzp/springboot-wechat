@@ -1,0 +1,129 @@
+/*header begin*/
+/*left begin*/
+.left {
+  float: left;
+  width: 240px;
+  background: #f0f5f9;
+  border-right: 1px solid #cbcbcb;
+  font-size: 16px;
+}
+.left .left-top {
+  padding-left: 50px;
+  height: 50px;
+  background: #5f8fe9;
+  color: white;
+  font-size: 18px;
+  line-height: 50px;
+}
+.left .first-ul {
+  border-top: 1px solid #cbcbcb;
+}
+.left .first-ul .first-li p {
+  padding-left: 50px;
+  font-weight: 500;
+  line-height: 40px;
+  background: #d4e6f0;
+  border-bottom: 1px solid #cbcbcb;
+}
+.left .first-ul .first-li p i {
+  float: right;
+  margin: 7.5px  20px 0 0;
+  width: 25px;
+  height: 25px;
+  background: url("/images/right.png");
+}
+.left .first-ul .first-li p i.down {
+  background: url("/images/down.png");
+  margin: 7.5px  20px 0 0;
+  width: 25px;
+  height: 25px;
+}
+.left .first-ul .first-li ul {
+  line-height: 40px;
+  background: #f0f5f9;
+}
+.left .first-ul .first-li ul li {
+  padding-left: 50px;
+}
+.left .first-ul .first-li ul li.bg {
+  background: #3fafe1;
+}
+.left .kong {
+  height: 200px;
+}
+/*right begin */
+.right {
+  background: white;
+}
+.right .top {
+  padding-left: 20px;
+  height: 50px;
+  background: linear-gradient(#ffffff, #f0f0f0);
+  line-height: 50px;
+  font-size: 18px;
+  border-bottom: 1px solid #cbcbcb;
+}
+.right .form-list {
+  margin-top: 15px;
+}
+.right .form-list li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.right .form-list li select,
+.right .form-list li button,
+.right .form-list li input {
+  background: linear-gradient(#f5f9fa, #f1f5f6);
+  height: 24px;
+}
+.right .form-list li input {
+  border: none;
+  outline: none;
+  border: 1px solid #cbcbcb;
+  padding-left: 6px ;
+}
+.right .form-list li button {
+  width: 50px;
+  background: #5f8fe9;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+.right button {
+  border-radius: 5px;
+  border: none;
+  color: white;
+  margin-left: 20px;
+  margin-top: 30px;
+  height: 24px;
+  width: 100px;
+  background: #5f8fe9;
+}
+.right .main-list {
+  margin: 30px auto;
+  width: 96%;
+  height: 40px;
+}
+.right .main-list .t-head {
+  background: linear-gradient(#f5f9fa, #f1f5f6);
+}
+.right .main-list td {
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+}
+.bottom {
+  clear: both;
+  text-align: center;
+  padding-top: 10px;
+  color: silver;
+  border-top: 1px solid #cdcdcd;
+  height: 60px;
+  background: linear-gradient(#f5f9fa, #f1f5f6);
+}
+.context {
+	width:96%;
+	padding:1%;
+	border: 1px solid #cccccc;
+	margin: 10px 10px;
+}
